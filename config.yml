@@ -1,0 +1,16 @@
+title: Upload codes I wrote till now.
+description: 'Hope, I am going to explorer new things. '
+template:
+  repo: upload-codes-i-wrote-till-now.-template
+  name: upload-codes-i-wrote-till-now.
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
